@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="preload" href="./fonts/GeologicaExtraLight.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/GeologicaLight.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/GeologicaRegular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/GeologicaSemiBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/GeologicaBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/GropledBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/KreadonExtraLight.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/KreadonBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/NunitoSansRegular.woff2" as="font" type="font/woff2" crossorigin /> -->
+    <link rel="stylesheet" href="./css/vendor/normalize.css" />
+    <!-- <link rel="stylesheet/less" type="text/css" href="./css/main.less" /> -->
+    <link rel="stylesheet" href="./css/dist/main.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/less"></script> -->
+    <script src="./js/libs/imask.min.js"></script>
+    <script src="./js/vars.js" defer></script>
+    <script src="./js/functions.js" defer></script>
+    <script src="./js/burger.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <title>Black Time Coffee</title>
+</head>
+
+<body class="page__body">
+    <div class="site-container">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./images/logo-header.svg" alt="Black Time Coffee">
+                        </a>
+                    </div>
+                    <div class="header__contact">
+                        <a class="header__contact-tel" href="tel:+998990782737">
+                            <img src="./images/tel-icon.svg" alt="Телефон">
+                            <p>+998 99 078 27 37</p>
+                        </a>
+                        <div class="header__contact-info">
+                            <a class="header__contact-address"
+                                href="https://yandex.ru/maps/10335/tashkent/?ll=69.267693%2C41.301897&mode=poi&poi%5Bpoint%5D=69.268077%2C41.302200&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D126133207077&z=20.29"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="./images/location-icon.svg" alt="Адрес">
+                                <p>Узбекистан, г. Ташкент, ул. Мирабад 1</p>
+                            </a>
+                            <span class="header__contact-time">
+                                <img src="./images/time-icon.svg" alt="График работы">
+                                <p>Ежедневно с 8:00 до 20:00</p>
+                            </span>
+                        </div>
+                    </div>
+                    <nav class="nav header__nav" data-menu>
+                        <ul class="list-reset nav__list">
+                            <li class="nav__item" data-menu-link><a href="#about_section" class="nav__link">О нас</a>
+                            </li>
+                            <li class="nav__item" data-menu-link><a href="#menu_section" class="nav__link">Меню</a></li>
+                            <li class="nav__item" data-menu-link><a href="#contacts_section"
+                                    class="nav__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                        <span class="burger__line"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hero">
+                <div class="container hero__container">
+                    <div class="hero__inner">
+                        <div class="hero__title">
+                            <h1>Будь в тренде ~</h1>
+                            <h1>встречай утро с нами!</h1>
+                        </div>
+                        <div class="hero__delivery">
+                            <div class="hero__delivery-area">
+                                <div class="hero__delivery-left">
+                                    <h2>Доставка кофе!</h2>
+                                </div>
+                                <div class="hero__delivery-right">
+                                    <ul class="list-reset hero__delivery-list">
+                                        <li>
+                                            <p>Сергели</p>
+                                            <p>Мирабадский район</p>
+                                        </li>
+                                        <li>
+                                            <p>Яккасарайский район</p>
+                                            <p>Ц1</p>
+                                        </li>
+                                    </ul>
+                                    <div class="hero__btn hero__btn--mobile">
+                                        <a href="#contact_form_wrapper" class="btn btn--primary">Насладиться кофе</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="centered hero__btn hero__btn--desktop">
+                                <a href="#contact_form_wrapper" class="btn btn--primary">Насладиться кофе</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about_section">
+                <div class="container">
+                    <div class="about__inner">
+                        <div class="about__info">
+                            <div class="about__title">
+                                <h1>О нас</h1>
+                            </div>
+                            <p class="about__descr">
+                                <strong>Кофейня «Black Time Coffee» </strong>
+                                — это место, где каждая чашка — это маленькая
+                                история, наполненная ароматами и вкусами.
+                            </p>
+                            <p class="about__descr">
+                                <strong>Мы приглашаем вас в наш уютный уголок, </strong>
+                                где кофе становится не просто напитком, а настоящим искусством.
+                            </p>
+                            <ul class="list-reset about__list">
+                                <li class="about__list-item">
+                                    <p>Свежий кофе</p>
+                                    <p>Уютная атмосфера</p>
+                                    <p>Итальянский кофе</p>
+                                </li>
+                                <li class="about__list-item">
+                                    <p>Разнообразное меню</p>
+                                    <p>Быстрое обслуживание</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about__img">
+                            <picture>
+                                <source srcset="./images/about-img.webp" media="(min-width: 660px)">
+                                <source srcset="./images/about-img-mobile.webp" media="(max-width: 659px)">
+                                <img src="./images/about-img.webp" alt="Black Time Coffee">
+                            </picture>
+                            <div class="about__title">
+                                <h1>О нас</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="menu" id="menu_section">
+                <div class="container menu__container">
+                    <div class="menu__inner">
+                        <div class="menu__title">
+                            <h1>Меню</h1>
+                        </div>
+                        <div class="menu__img">
+                            <img src="./images/coffee-cup.webp" alt="">
+                        </div>
+                        <div class="menu__assortment">
+                            <ul class="list-reset menu__list">
+                                <li>
+                                    <h3>Эспрессо</h3>
+                                    <span>15.000</span>
+                                </li>
+                                <li>
+                                    <h3>Американо</h3>
+                                    <span>18.000</span>
+                                </li>
+                                <li>
+                                    <h3>Лунго</h3>
+                                    <span>18.000</span>
+                                </li>
+                                <li>
+                                    <h3>Макиато</h3>
+                                    <span>20.000</span>
+                                </li>
+                                <li>
+                                    <h3>Флет уайт</h3>
+                                    <span>20.000</span>
+                                </li>
+                                <li>
+                                    <h3>Капучино</h3>
+                                    <span>20.000</span>
+                                </li>
+                                <li>
+                                    <h3>Латте</h3>
+                                    <span>20.000</span>
+                                </li>
+                                <li>
+                                    <h3>Раф</h3>
+                                    <span>28.000</span>
+                                </li>
+                                <li>
+                                    <h3>Мокко</h3>
+                                    <span>28.000</span>
+                                </li>
+                            </ul>
+                            <div class="menu__assortment-border"></div>
+                            <ul class="list-reset menu__list">
+                                <li>
+                                    <h3>Глясе</h3>
+                                    <span>28.000</span>
+                                </li>
+                                <li>
+                                    <h3>Айс латте</h3>
+                                    <span>22.000/28.000</span>
+                                </li>
+                                <li>
+                                    <h3>Айс блек</h3>
+                                    <span>20.000/28.000</span>
+                                </li>
+                                <li>
+                                    <h3>Фраппучино</h3>
+                                    <span>30.000</span>
+                                </li>
+                                <li>
+                                    <h3>Милкшейк</h3>
+                                    <span>25.000/30.000</span>
+                                </li>
+                                <li>
+                                    <h3>Фреш апельсин</h3>
+                                    <span>30.000/45.000</span>
+                                </li>
+                                <li>
+                                    <h3>Фреш яблоко</h3>
+                                    <span>25.000/35.000</span>
+                                </li>
+                                <li>
+                                    <h3>Фреш микс</h3>
+                                    <span>30.000/50.000</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts" id="contacts_section">
+                <div class="container contacts__container">
+                    <div class="grid contacts__inner">
+                        <div class="contacts__info">
+                            <a href="#" class="contacts__logo">
+                                <img src="./images/logo-contacts.webp" alt="Black Time Coffee">
+                            </a>
+                            <div class="contacts__descr">
+                                <a href="https://yandex.ru/maps/10335/tashkent/?ll=69.267693%2C41.301897&mode=poi&poi%5Bpoint%5D=69.268077%2C41.302200&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D126133207077&z=20.29"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <img src="./images/location-icon.svg" alt="Адрес">
+                                    <p class="contacts__address">Узбекистан,
+                                        г. Ташкент, ул. Мирабад
+                                        1</p>
+                                </a>
+                                <span>
+                                    <img src="./images/time-icon.svg" alt="График работы">
+                                    <p>Ежедневно с 8:00 до 20:00</p>
+                                </span>
+                                <a href="tel:+998990782737">
+                                    <img src="./images/tel-icon.svg" alt="Телефон">
+                                    <p>+998 99 078 27 37</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contacts__form-wrapper" id="contact_form_wrapper">
+                            <h1>Закажи кофе прямо сейчас!</h1>
+                            <form action="mail.php" method="post" class="contacts__form" id="contacts_form">
+                                <div class="contacts__form-fields">
+                                    <label class="contacts__form-fields-label">
+                                        <input class="input-reset _req" type="text" id="contacts_input_name"
+                                            name="input_name" placeholder="Имя">
+                                    </label>
+                                    <label class="contacts__form-fields-label">
+                                        <input class="input-reset _req" type="tel" id="contacts_input_tel"
+                                            placeholder="Телефон" name="input_phone" data-input-type="phone">
+                                    </label>
+                                    <label class="contacts__form-fields-label">
+                                        <input class="input-reset _req" type="text" id="contacts_input_dish"
+                                            name="input_dish" placeholder="Блюдо">
+                                    </label>
+                                    <label class="contacts__form-fields-label">
+                                        <input class="input-reset _req" type="text" id="contacts_input_address"
+                                            name="input_address" placeholder="Адрес доставки">
+                                    </label>
+                                </div>
+                                <div class="centered contacts__form-centered-btn">
+                                    <button type="submit" class="btn-reset btn btn--primary contacts__form-btn"
+                                        id="contacts_form_submit">Насладиться
+                                        кофе</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+
+            <div class="container footer__navigation">
+                <div class="footer__logo">
+                    <a href="#">
+                        <img src="./images/logo-footer.svg" alt="Black Time Coffee">
+                    </a>
+                </div>
+                <nav class="nav footer__nav">
+                    <ul class="list-reset nav__list">
+                        <li class="nav__item"><a href="#about_section" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#menu_section" class="nav__link">Меню</a></li>
+                        <li class="nav__item"><a href="#contacts_section" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <span class="footer__hr"></span>
+            <a class="container footer__corypight" href="https://site-uz.uz/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/r2-logo.svg" alt="R2 Technology company">
+                <h2>Создание, поддержка и продвижение сайтов в Узбекистане</h2>
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+.menu {
+	&__container {
+		.mobile({
+			max-width: 100%;
+			padding: 0;
+		});
+	}
+
+	&__inner {
+		position: relative;
+		border-radius: 50px;
+		background-color: @color-light;
+		margin-bottom: 100px;
+		z-index: 1;
+
+		.tablet({
+			margin-bottom: 500px;
+		});
+
+		.m-tablet({
+			margin-bottom: 390px;
+			border-radius: 34px;
+		});
+
+		.b-mobile({
+			margin-bottom: 325px;
+			border-radius: 34px;
+		});
+
+		.mobile({
+			margin-bottom: 325px;
+			border-radius: 34px;
+		});
+	}
+
+	&__title {
+		position: absolute;
+		right: 0;
+		top: -44px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 261px;
+		width: 100%;
+		height: 81px;
+		background-image: url('@{img}short-green-rectangle-reversed.svg');
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 42px;
+
+		.tablet({
+			max-width: 230px;
+			height: 70px;
+		});
+
+		.laptop({
+			max-width: 236px;
+   			height: 72px;
+		});
+
+		.m-tablet({
+			top: -32px;
+			right: 35px;
+			max-width: 190px;
+			height: 59px;
+		});
+
+		.b-mobile({
+			top: -32px;
+			right: 35px;
+			max-width: 190px;
+			height: 59px;
+		});
+
+		.mobile({
+			top: -32px;
+			right: 35px;
+			max-width: 190px;
+			height: 59px;
+		});
+
+		h1 {
+			font-family: @font-gropled;
+			font-size: 52px;
+			font-weight: 700;
+			color: @color-white;
+
+			.tablet({
+				font-size: 42px;
+			});
+
+			.laptop({
+				font-size: 40px;
+			});
+
+			.m-tablet({
+				font-size: 38px;
+			});
+
+			.b-mobile({
+				font-size: 38px;
+			});
+
+			.mobile({
+				font-size: 38px;
+			});
+		}
+	}
+
+	&__img {
+		position: absolute;
+		left: 0;
+		top: -50%;
+		transform: translateY(18%) translateX(-17%);
+		z-index: -1;
+
+		.tablet({
+			top: unset;
+			width: 80%;
+			bottom: 0;
+			left: 50%;
+			transform: translateY(76%) translateX(-17%);
+		});
+
+		.laptop({
+			transform: translateY(20%) translateX(2%);
+			max-width: 90%;
+		});
+
+		.m-tablet({
+			top: unset;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-18%, 77%);
+			max-width: 660px;
+		});
+
+		.b-mobile({
+			top: unset;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-18%, 77%);
+			width: 100%;
+		});
+
+		.mobile({
+			top: unset;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-18%, 77%);
+			width: 100%;
+		});
+
+		img {
+			.m-tablet({
+				max-width: 650px;
+			});
+		}
+	}
+
+	&__assortment {
+		padding: 60px;
+		display: flex;
+		justify-content: flex-end;
+		column-gap: 160px;
+
+		.tablet({
+			column-gap: 80px;
+			padding: 60px;
+			justify-content: space-evenly;
+		});
+
+		.laptop({
+			padding: 60px 45px 35px 0px;
+			column-gap: 90px;
+		});
+
+		.m-tablet({
+			justify-content: space-evenly;
+			padding: 49px 37px 59px 37px;
+			column-gap: 48px;
+		});
+
+		.b-mobile({
+			justify-content: space-evenly;
+			padding: 49px 37px 59px 37px;
+			column-gap: 48px;
+		});
+
+		.mobile({
+			padding: 49px 37px 59px 37px;
+			column-gap: 48px;
+		});
+	}
+
+	&__assortment-border {
+		width: 1px;
+		background-color: @color-lightgray;
+
+		.tablet({
+			opacity: 0;
+		});
+
+		.m-tablet({
+			display: none;
+		});
+
+		.b-mobile({
+			display: none;
+		});
+
+		.mobile({
+			display: none;
+		});
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+
+		.m-tablet({
+			row-gap: 18px;
+		});
+
+		.b-mobile({
+			row-gap: 18px;
+		});
+
+		.mobile({
+			row-gap: 18px;
+		});
+
+		li {
+			h3 {
+				color: @color-darkgray;
+				font-size: 32px;
+				font-weight: 600;
+				line-height: 120%;
+
+				.tablet({
+					font-size: 31px;
+				});
+
+				.laptop({
+					font-size: 26px;
+				});
+
+				.m-tablet({
+					font-size: 24px;
+				});
+
+				.b-mobile({
+					font-size: 24px;
+				});
+
+				.mobile({
+					font-size: 24px;
+				});
+			}
+
+			span {
+				color: @color-lightbassinet;
+				font-size: 28px;
+				font-weight: 250;
+				line-height: 120%;
+
+				.tablet({
+					font-size: 27px;
+				});
+
+				.laptop({
+					font-size: 20px;
+				});
+
+				.m-tablet({
+					font-size: 20px;
+				});
+
+				.b-mobile({
+					font-size: 20px;
+				});
+
+				.mobile({
+					font-size: 20px;
+				});
+			}
+		}
+	}
+}

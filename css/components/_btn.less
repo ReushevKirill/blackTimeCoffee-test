@@ -1,0 +1,24 @@
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px 52px;
+	border-radius: 30px;
+	transform: scale(1);
+	transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+
+	&--primary {
+		background-color: @color-pink;
+		color: @color-white;
+		font-size: 20px;
+		font-weight: 400;
+
+		&:hover {
+			background-color: darken(@color-pink, 15%);
+		}
+
+		&:active {
+			transform: scale(0.98);
+		}
+	}
+}

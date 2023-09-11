@@ -1,0 +1,50 @@
+// Мобильные у-ва
+@mobile: 480px;
+
+// Большие мобильные у-ва
+@b-mobile-min: 481px;
+@b-mobile-max: 659px;
+
+// Мини-планшеты
+@m-tablet-min: 660px;
+@m-tablet-max: 959px;
+
+// Планшеты
+@tablet-min: 960px;
+@tablet-max: 1299px;
+
+// Ноутбуки
+@laptop-min: 1300px;
+@laptop-max: 1520px;
+
+
+.mobile(@rules) {
+	@media screen and (max-width: @mobile) {
+		@rules();
+	}
+}
+
+.b-mobile(@rules) {
+	@media screen and (min-width: @b-mobile-min) and (max-width: @b-mobile-max) {
+		@rules();
+	}
+}
+
+.m-tablet(@rules) {
+	@media screen and (min-width: @m-tablet-min) and (max-width: @m-tablet-max) {
+		@rules();
+	}
+}
+
+.tablet(@rules) {
+	@media screen and (min-width: @tablet-min) and (max-width: @tablet-max) {
+		@rules();
+	}
+}
+
+.laptop(@rules) {
+	@media screen and (min-width: @laptop-min) and (max-width: @laptop-max) {
+		@rules();
+	}
+}
+
