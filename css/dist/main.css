@@ -84,7 +84,7 @@ html {
 
 .page--ios h2.gropled-title,
 .page--android h2.gropled-title{
-  -webkit-margin-before: 8%;  
+  -webkit-margin-before: 6%;  
 }
 
 .page__body {
