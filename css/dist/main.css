@@ -76,9 +76,14 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-.page--ios .gropled-title,
-.page--android .gropled-title{
+.page--ios h1.gropled-title,
+.page--android h1.gropled-title{
   -webkit-margin-before: 15%;  
+}
+
+.page--ios h2.gropled-title,
+.page--android h2.gropled-title{
+  -webkit-margin-before: 8%;  
 }
 
 .page__body {
