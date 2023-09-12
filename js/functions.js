@@ -131,7 +131,7 @@ const mobileCheck = () => {
 
 	if (/Safari/i.test(userAgent)) {
 		vars.htmlEl.classList.add('page--ios');
-		return "iOS";
+		return "Safari";
 	}
 
 	if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
