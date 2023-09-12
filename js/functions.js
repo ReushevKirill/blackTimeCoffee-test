@@ -129,7 +129,7 @@ const mobileCheck = () => {
 		return "Android";
 	}
 
-	if (userAgent.indexOf('AppleWebKit') !== -1) {
+	if (typeof ApplePaySession === 'function') {
 		vars.htmlEl.classList.add('page--ios');
 		return "Safari";
 	}
