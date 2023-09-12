@@ -129,7 +129,7 @@ const mobileCheck = () => {
 		return "Android";
 	}
 
-	if (/Safari/i.test(userAgent)) {
+	if (userAgent.indexOf('AppleWebKit') !== -1) {
 		vars.htmlEl.classList.add('page--ios');
 		return "Safari";
 	}
