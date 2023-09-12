@@ -2,7 +2,7 @@
 header('Content-Type: text/html; charset=utf-8');
 // Основные данные
 define('TITLE', 'Сообщение с сайта Black Time Coffee');
-define('EMAIL', 'EMAIL');
+define('EMAIL', 'mr.blaikking@gmail.com');
 
 define('EMAIL_SEND', true);
 define('TELEGRAM_SEND', false);
