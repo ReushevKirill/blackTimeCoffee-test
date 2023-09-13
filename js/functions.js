@@ -119,25 +119,3 @@ function formRemoveError(input) {
 	input.parentElement.classList.remove('_error')
 	input.classList.remove('_error')
 }
-
-// Проверка ОС устройства
-const mobileCheck = () => {
-	const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-	if (/android/i.test(userAgent)) {
-		vars.htmlEl.classList.add('page--android');
-		return "Android";
-	}
-
-	if (typeof ApplePaySession === 'function') {
-		vars.htmlEl.classList.add('page--ios');
-		return "Safari";
-	}
-
-	if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-		vars.htmlEl.classList.add('page--ios');
-		return "iOS";
-	}
-
-	return "unknown";
-};
