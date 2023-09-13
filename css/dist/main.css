@@ -48,13 +48,22 @@
   font-display: swap;
   font-style: normal;
 }
-@font-face {
+/* @font-face {
   font-family: 'Gropled';
   src: url('../../fonts/GropledBold.woff2') format('woff2');
   font-weight: 700;
   font-display: swap;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Gropled';
+  src: url('../../fonts/Gropled-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
 }
+
 @font-face {
   font-family: 'NunitoSans';
   src: url('../../fonts/NunitoSansRegular.woff2') format('woff2');
