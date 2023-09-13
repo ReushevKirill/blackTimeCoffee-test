@@ -12,5 +12,5 @@ const contactPhoneMask = IMask(contactPhone, {
 
 contactsForm.addEventListener('submit', formSend)
 
-mobileCheck()
+// mobileCheck()
 console.log(mobileCheck())
