@@ -119,3 +119,24 @@ function formRemoveError(input) {
 	input.parentElement.classList.remove('_error')
 	input.classList.remove('_error')
 }
+
+// Загрузка recaptcha
+const captchaLoad = () => {
+	if (vars.isCaptchaLoad) return
+
+	const script = document.createElement('script')
+	script.src =
+		'https://www.google.com/recaptcha/api.js'
+	script.async = true
+	script.defer = true
+	script.onload = () => {
+		const onloadCallback = () => {
+			grecaptcha.render('recaptcha_contact', {
+				sitekey: '6LcCpIMcAAAAAGC3SnqJREDkYsG9zpuMksRr410B',
+				callback: () => console.log('recaptcha is loading!'),
+			})
+		}
+	}
+	document.head.appendChild(script)
+	vars.isCaptchaLoad = true
+}

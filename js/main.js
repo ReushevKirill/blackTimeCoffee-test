@@ -10,4 +10,6 @@ const contactPhoneMask = IMask(contactPhone, {
 	mask: '+ (00) 000-00-00',
 })
 
+contactPhone.addEventListener('click', captchaLoad)
+
 contactsForm.addEventListener('submit', formSend)
